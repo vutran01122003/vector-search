@@ -1,0 +1,9 @@
+POST http://localhost:4000/api/v1/file
+Content-Type: multipart/form-data; boundary=MyBoundary
+
+--MyBoundary
+Content-Disposition: form-data; name="files"; filename="dummy.pdf"
+Content-Type: application/pdf
+
+< ./dummy.pdf
+--MyBoundary--
